@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Todo List Web App </title>
+</head>
+
+<body>
+    <div>
+        <div class = "header">
+            <h1> To-Do List Web App</h1>
+        </div>
+
+        <div class = "container">
+            <div class = "row design">
+                <div class="column">
+                    <div class = "card">
+                        <div class = "card-body">
+                            <form id = "form-Task">
+                                <div class="form-group">
+                                    <input class="textbox" type="text" id="title" maxlength="50" autocomplete="off" 
+                                        placeholder="Title" required>
+                                </div>
+                                <div class = "form-group">
+                                    <textarea class="textarea" type="text" id="description" maxlength="500" autocomplete="off"
+                                        placeholder="Description" cols="22" rows="10" required></textarea>
+                                </div>
+                                <button type="submit" class="save">Save</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-task">
+                    <div class="row-column-task">
+                                <div class="titleTask">
+                                    <p class="heading">Title</p>
+                                </div>
+                                <div class="descriptionTask">
+                                    <p class="heading">Description</p>
+                                </div>
+                                <div class="deleteTask">
+                                    <p class="heading">Delete</p>
+                                </div>
+                    </div>
+                    <div id="tasks"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
